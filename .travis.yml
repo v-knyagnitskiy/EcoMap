@@ -4,6 +4,7 @@ python:
 
 before_install:
   - pwd
+  - ls ecomap/unittest/src/python/ecomap
 
 # command to install dependencies
 install: "pip install -r requirements.txt"
