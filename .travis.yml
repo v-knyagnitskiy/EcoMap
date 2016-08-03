@@ -10,7 +10,7 @@ before_install:
   - export PYTHON=${PYTHON:-/etc/python}
   - export STATICROOT=${STATICROOT:-${PRODROOT}/www/}
   - export PYTHON_EGG_CACHE=${PYTHON_EGG_CACHE:-$TRAVIS_BUILD_DIR/.python-eggs}
-  - ls /home/travis/build/v-knyagnitskiy/EcoMap/
+  - ls -a /home/travis/build/v-knyagnitskiy/EcoMap/
 
 # command to install dependencies
 install: "pip install -r requirements.txt"
