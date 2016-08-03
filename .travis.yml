@@ -5,7 +5,7 @@ python:
 before_install:
   - echo $TRAVIS_BUILD_DIR
   - export PRODROOT=$TRAVIS_BUILD_DIR/ecomap
-  - echo $PRODROOT
+  - export PYSRCROOT=${PRODROOT}/src/python
 
 # command to install dependencies
 install: "pip install -r requirements.txt"
