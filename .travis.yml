@@ -6,11 +6,11 @@ before_install:
   - echo $TRAVIS_BUILD_DIR
   - export PRODROOT=$TRAVIS_BUILD_DIR/ecomap
   - export PYSRCROOT=${PRODROOT}/src/python
-  - CONFROOT=${PRODROOT}/etc
-  - PYTHONPATH=$PYSRCROOT
-  - PYTHON=${PYTHON:-/etc/python}
-  - STATICROOT=${STATICROOT:-${PRODROOT}/www/}
-  - PYTHON_EGG_CACHE=${PYTHON_EGG_CACHE:-/tmp/.python-eggs}
+  - export CONFROOT=${PRODROOT}/etc
+  - export PYTHONPATH=$PYSRCROOT
+  - export PYTHON=${PYTHON:-/etc/python}
+  - export STATICROOT=${STATICROOT:-${PRODROOT}/www/}
+  - export PYTHON_EGG_CACHE=${PYTHON_EGG_CACHE:-/tmp/.python-eggs}
 
 # command to install dependencies
 install: "pip install -r requirements.txt"
