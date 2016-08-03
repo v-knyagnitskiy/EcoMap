@@ -7,8 +7,8 @@ before_install:
   - export PRODROOT=$TRAVIS_BUILD_DIR/ecomap
   - export PYSRCROOT=${PRODROOT}/src/python
   - export CONFROOT=${PRODROOT}/etc
-  - export PYTHONPATH=$PYSRCROOT
-  - export PYTHON=${PYTHON:-/etc/python}
+#  - export PYTHONPATH=$PYSRCROOT
+#  - export PYTHON=${PYTHON:-/etc/python}
 #  - export STATICROOT=${STATICROOT:-${PRODROOT}/www/}
 #  - export PYTHON_EGG_CACHE=${PYTHON_EGG_CACHE:-/tmp/.python-eggs}
 
