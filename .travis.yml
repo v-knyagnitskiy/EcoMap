@@ -9,7 +9,8 @@ before_install:
   - export PYTHONPATH=$PYSRCROOT
   - export PYTHON=${PYTHON:-/etc/python}
 #  - export STATICROOT=${STATICROOT:-${PRODROOT}/www/}
-#  - export PYTHON_EGG_CACHE=${PYTHON_EGG_CACHE:-/tmp/.python-eggs}
+  - export PYTHON_EGG_CACHE=${PYTHON_EGG_CACHE:-$TRAVIS_BUILD_DIR/.python-eggs}
+  - ls ($TRAVIS_BUILD_DIR)
 
 # command to install dependencies
 install: "pip install -r requirements.txt"
