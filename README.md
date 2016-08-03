@@ -1,4 +1,4 @@
-# Ecomap project (by LV-164.UI&LV-173.UI)
+# Ecomap project (by LV-164.UI&LV-173.UI) [![Build Status](https://travis-ci.org/v-knyagnitskiy/EcoMap.svg?branch=master)](https://travis-ci.org/v-knyagnitskiy/EcoMap)
 
 ## About this project
 
