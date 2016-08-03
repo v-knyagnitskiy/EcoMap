@@ -4,7 +4,8 @@ python:
 
 before_install:
   - echo $TRAVIS_BUILD_DIR
-  - pwd
+  - export PRODROOT=$TRAVIS_BUILD_DIR/ecomap
+  - echo $PRODROOT
 
 # command to install dependencies
 install: "pip install -r requirements.txt"
