@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Script for run all unittests 
 
-PRODROOT=~/home/travis/build/v-knyagnitskiy/EcoMap/ecomap
+PRODROOT=/home/travis/build/v-knyagnitskiy/EcoMap/ecomap
 PYSRCROOT=${PRODROOT}/src/python
 CONFROOT=${PRODROOT}/etc
 PYTHONPATH=$PYSRCROOT
