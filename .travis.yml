@@ -3,7 +3,7 @@ python:
   - "2.7"
 
 before_install:
-#  - export PRODROOT=$TRAVIS_BUILD_DIR/ecomap
+  - export PRODROOT=$TRAVIS_BUILD_DIR/ecomap
 #  - export PYSRCROOT=${PRODROOT}/src/python
 #  - export CONFROOT=${PRODROOT}/etc
 #  - export PYTHONPATH=$PYSRCROOT
