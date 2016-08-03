@@ -2,6 +2,10 @@ language: python
 python:
   - "2.7"
 
+before_install:
+  - echo $TRAVIS_BUILD_DIR
+  - pwd
+
 # command to install dependencies
 install: "pip install -r requirements.txt"
 
