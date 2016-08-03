@@ -1,7 +1,7 @@
 # !/usr/bin/env bash
 # Script run config builder 
 
-PRODROOT=~/home/workspace/test_ecomap/ecomap
+PRODROOT=~/home/travis/build/v-knyagnitskiy/EcoMap/ecomap
 PYSRCROOT=${PRODROOT}/src/python
 CONFROOT=${PRODROOT}/etc
 PYTHONPATH=$PYSRCROOT
