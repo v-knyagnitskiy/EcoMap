@@ -5,12 +5,8 @@ python:
 # command to install dependencies
 install: "pip install -r requirements.txt"
 
-before_install:
-- python --version
-- ~/virtualenv/python2.7/bin/python --version
-
 # command to run tests
-script: python -m unittest discover -v ecomap/unittest/src/python/ecomap
+script: python -m unittest discover -v $PRODROOT/unittest/src/python/ecomap
 
 # safelist
 branches:
