@@ -1,0 +1,12 @@
+version: 0.0
+os: linux 
+
+files:
+  - source: /ecomap
+    destination: /tmp
+
+permissions:
+  - object: /tmp/ecomap
+    owner: www-data
+    group: www-data
+    mode: 770
