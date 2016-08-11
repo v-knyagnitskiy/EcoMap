@@ -1,12 +1,20 @@
-version: 1.0
-os: linux 
-
+version: 0.0
+os: linux
 files:
-  - source: /
-    destination: /tmp
-
-permissions:
-  - object: /tmp/ecomap
-    owner: www-data
-    group: www-data
-    mode: 770
+  - source: /index.html
+    destination: /var/www/html/
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies
+      timeout: 300
+      runas: root
+    - location: scripts/start_server
+      timeout: 300
+      runas: root
+    - location: scripts/remove_index
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: scripts/stop_server
+      timeout: 300
+      runas: root
