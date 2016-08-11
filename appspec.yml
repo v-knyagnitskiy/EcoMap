@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 version: 0.0
 os: linux
 files:
@@ -19,3 +20,17 @@ hooks:
       timeout: 300
       runas: root
 
+=======
+version: 1.0
+os: linux 
+
+files:
+  - source: /
+    destination: /tmp
+
+permissions:
+  - object: /tmp/ecomap
+    owner: www-data
+    group: www-data
+    mode: 770
+>>>>>>> master
