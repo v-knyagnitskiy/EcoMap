@@ -9,6 +9,6 @@ install: "pip install -r requirements.txt"
 script: python -m unittest discover -v $PRODROOT/unittest/src/python/ecomap
 
 # safelist
-branches:
-  only:
-    - dev
+#branches:
+#  only:
+#    - dev
