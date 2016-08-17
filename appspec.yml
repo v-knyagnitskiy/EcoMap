@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /index.html
-    destination: /tmp/
+    destination: /home/ubuntu/
 hooks:
   BeforeInstall:
     - location: scripts/start_server
