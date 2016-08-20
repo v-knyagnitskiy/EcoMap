@@ -19,4 +19,4 @@ mysql \
 --execute="USE ecomap; SOURCE CREATE_DB.sql;" \
 --execute="USE ecomap; SOURCE INSERT_DATA.sql;"
 
-cd /
+rm -d -r -f /var/www/ecomap/db
