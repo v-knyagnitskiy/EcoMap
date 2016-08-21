@@ -8,7 +8,7 @@ files:
   - source: /ecomap/etc/_ecomap.apache.conf
     destination: /etc/apache2/sites-available/ecomap.conf
 permissions:
-  - object: /var/www/
+  - object: /var/www
     owner: www-data
     group: www-data
     mode: 770
