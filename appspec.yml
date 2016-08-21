@@ -5,7 +5,3 @@ hooks:
     - location: scripts/install_dependencies
       timeout: 100
       runas: root
-  BeforeInstall:
-    - location: scripts/configure_database
-      timeout: 100
-      runas: root
