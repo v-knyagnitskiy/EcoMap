@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: \
-  destination: /var/www/
+  - source: /ecomap
+    destination: /var/www/ecomap
   - source: /requirements.txt
-    destination: /tmp/
+    destination: /tmp
 permissions:
   - object: /var/www/
     owner: www-data
