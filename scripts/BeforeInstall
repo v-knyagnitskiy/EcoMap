@@ -2,7 +2,7 @@
 
 cd /opt/codedeploy-agent/deployment-root/$DEPLOYMENT_GROUP_ID/$DEPLOYMENT_ID/deployment-archive/
 
-pip install -r requirements.txt
+pip install --yes --requirement requirements.txt
 
 cd ecomap/db/ecomap/
 
@@ -11,6 +11,7 @@ mysql \
 --password=lv188kvtrootmysql \
 --host=$(cat /root/app_data/RDSInstance_Endpoint.Address) \
 --port=3306 \
+--force \
 --execute="DROP DATABASE IF EXISTS ecomap;" \
 --execute="CREATE DATABASE ecomap;" \
 --execute="DROP USER IF EXISTS 'dog'@'%';" \
