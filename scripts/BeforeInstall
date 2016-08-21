@@ -1,6 +1,10 @@
 #!/bin/bash
 
-cd /opt/codedeploy-agent/deployment-root/$DEPLOYMENT_GROUP_ID/$DEPLOYMENT_ID/deployment-archive/ecomap/db/ecomap/
+cd /opt/codedeploy-agent/deployment-root/$DEPLOYMENT_GROUP_ID/$DEPLOYMENT_ID/deployment-archive/
+
+pip install -r requirements.txt
+
+cd ecomap/db/ecomap/
 
 mysql \
 --user=root \
