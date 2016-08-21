@@ -5,12 +5,18 @@ files:
     destination: /var/www/ecomap
   - source: /requirements.txt
     destination: /tmp
+  - source: /ecomap/etc/_ecomap.apache.conf
+    destination: /etc/apache2/sites-available/ecomap.conf
 permissions:
   - object: /var/www/
     owner: www-data
     group: www-data
     mode: 770
   - object: /tmp/requirements.txt
+    owner: root
+    group: root
+    mode: 770
+  - object: /etc/apache2/sites-available/ecomap.conf
     owner: root
     group: root
     mode: 770
