@@ -6,7 +6,7 @@ files:
   - source: /requirements.txt
     destination: /tmp
   - source: /ecomap/etc/_ecomap.apache.conf
-    destination: /etc/apache2/sites-available/ecomap.conf
+    destination: /etc/apache2/sites-available
 permissions:
   - object: /var/www
     owner: www-data
