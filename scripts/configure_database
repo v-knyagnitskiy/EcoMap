@@ -15,8 +15,8 @@ mysql \
 --execute="CREATE USER 'cat'@'%' IDENTIFIED BY 'lv188kvtcatmysql';" \
 --execute="GRANT ALL PRIVILEGES ON ecomap.* TO 'dog'@'%';" \
 --execute="GRANT SELECT ON ecomap.* TO 'cat'@'%';" \
---execute="USE ecomap; SOURCE /var/www/ecomap/db/ecomap/CREATE_DB.sql;" \
---execute="USE ecomap; SOURCE /var/www/ecomap/db/ecomap/INSERT_DATA.sql;" \
+--execute="USE ecomap; SOURCE CREATE_DB.sql;" \
+--execute="USE ecomap; SOURCE INSERT_DATA.sql;" \
 --execute="FLUSH PRIVILEGES;"
 
 rm -d -r -f /var/www/ecomap/db
