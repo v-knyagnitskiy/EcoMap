@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 hooks:
-  AfterInstall:
-    - location: scripts/configure_database
+  BeforeInstall:
+    - location: scripts/install_dependencies
       timeout: 300
       runas: root
