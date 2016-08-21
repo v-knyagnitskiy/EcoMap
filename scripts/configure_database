@@ -7,7 +7,6 @@ mysql \
 --password=lv188kvtrootmysql \
 --host=$(cat /root/app_data/RDSInstance_Endpoint.Address) \
 --port=3306 \
---force \
 --execute="DROP DATABASE IF EXISTS ecomap;" \
 --execute="CREATE DATABASE ecomap;" \
 --execute="DROP USER IF EXISTS 'dog'@'%';" \
@@ -19,3 +18,5 @@ mysql \
 --execute="USE ecomap; SOURCE /var/www/ecomap/db/ecomap/CREATE_DB.sql;" \
 --execute="USE ecomap; SOURCE /var/www/ecomap/db/ecomap/INSERT_DATA.sql;" \
 --execute="FLUSH PRIVILEGES;"
+
+rm -d -r -f /var/www/ecomap/db
