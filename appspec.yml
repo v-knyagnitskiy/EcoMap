@@ -30,8 +30,8 @@ hooks:
   AfterInstall:
     - location: scripts/edit_config
       timeout: 300
-      runas: rootAfterInstall
+      runas: root
   ApplicationStart:
     - location: scripts/start_server
       timeout: 300
-      runas: rootAfterInstall
+      runas: root
