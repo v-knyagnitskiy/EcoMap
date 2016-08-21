@@ -14,7 +14,7 @@ mysql \
 --execute="DROP USER IF EXISTS 'cat'@'%';" \
 --execute="CREATE USER 'dog'@'%' IDENTIFIED BY 'lv188kvtdogmysql';" \
 --execute="CREATE USER 'cat'@'%' IDENTIFIED BY 'lv188kvtcatmysql';" \
---execute="GRANT ALL PRIVILEGES ON ecomap_.* TO 'dog'@'%';" \
+--execute="GRANT ALL PRIVILEGES ON ecomap.* TO 'dog'@'%';" \
 --execute="GRANT SELECT ON ecomap.* TO 'cat'@'%';" \
 --execute="USE ecomap; SOURCE CREATE_DB.sql;" \
 --execute="USE ecomap; SOURCE INSERT_DATA.sql;"
