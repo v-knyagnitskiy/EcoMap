@@ -20,11 +20,11 @@ hooks:
       timeout: 100
       runas: root
   BeforeInstall:
-    - location: scripts/configure_database
+    - location: scripts/install_dependencies
       timeout: 300
       runas: root
-  BeforeInstall:
-    - location: scripts/install_dependencies
+  AfterInstall:
+    - location: scripts/configure_database
       timeout: 300
       runas: root
   AfterInstall:
