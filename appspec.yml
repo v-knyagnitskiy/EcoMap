@@ -1,6 +1,10 @@
 version: 0.0
 os: linux
 hooks:
+  ApplicationStop:
+    - location: scripts/ApplicationStop
+      timeout: 100
+      runas: root
   BeforeInstall:
     - location: scripts/BeforeInstall
       timeout: 100
