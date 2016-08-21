@@ -1,8 +1,5 @@
 version: 0.0
 os: linux
-files:
-  - source: /requirements.txt
-    destination: /tmp
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
