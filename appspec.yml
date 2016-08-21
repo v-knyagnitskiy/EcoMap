@@ -1,43 +1,7 @@
 version: 0.0
 os: linux
-files:
-  - source: /ecomap
-    destination: /var/www/ecomap
-  - source: /requirements.txt
-    destination: /tmp
-  - source: /ecomap/etc/_ecomap.apache.conf
-    destination: /etc/apache2/sites-available
-permissions:
-  - object: /var/www
-    owner: www-data
-    group: www-data
-    mode: 770
-  - object: /tmp/requirements.txt
-    owner: root
-    group: root
-    mode: 770
-  - object: /etc/apache2/sites-available/ecomap.conf
-    owner: root
-    group: root
-    mode: 770
 hooks:
-  ApplicationStop:
-    - location: scripts/stop_server
-      timeout: 100
-      runas: root
-  BeforeInstall:
-    - location: scripts/install_dependencies
-      timeout: 300
-      runas: root
   AfterInstall:
     - location: scripts/configure_database
-      timeout: 300
-      runas: root
-  AfterInstall:
-    - location: scripts/edit_config
-      timeout: 300
-      runas: root
-  ApplicationStart:
-    - location: scripts/start_server
       timeout: 300
       runas: root
