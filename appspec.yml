@@ -2,10 +2,11 @@ version: 0.0
 os: linux
 hooks:
   ApplicationStop:
-    - location: scripts/applicationstop.sh
+    - location: Scripts/01-application_stop.sh
       timeout: 100
       runas: root
   BeforeInstall:
-    - location: scripts/beforeinstall.sh
+    - location: Scripts/01-before_install.sh
+    - location: Scripts/02-before_install.sh
       timeout: 100
       runas: root
