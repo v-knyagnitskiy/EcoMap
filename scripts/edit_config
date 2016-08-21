@@ -7,4 +7,4 @@ sed -i -e "s|ro.host=xxxxx|rw.host=$(cat /root/app_data/RDSInstance_Endpoint.Add
 
 sed -i -e "s|<VirtualHost xxxxx:80>|<VirtualHost *:80>|g" /etc/apache2/sites-available/ecomap.conf
 sed -i -e "s|ServerName xxxxx|ServerName $(cat /root/app_data/EC2InstanceElasticIp)|g" /etc/apache2/sites-available/ecomap.conf
-sed -i -e "s|ServerAlias xxxxx|ServerAlias www.$(cat /root/app_data/EC2InstanceElasticIp)|g" /etc/apache2/sites-available/ecomap.confconf
+sed -i -e "s|ServerAlias xxxxx|ServerAlias www.$(cat /root/app_data/EC2InstanceElasticIp)|g" /etc/apache2/sites-available/ecomap.conf
