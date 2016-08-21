@@ -1,5 +1,7 @@
 #!/bin/bash
 
+mv /etc/apache2/sites-available/_ecomap.apache.conf /etc/apache2/sites-available/ecomap.conf
+
 sed -i -e "s|rw.host=xxxxx|rw.host=$(cat /root/app_data/RDSInstance_Endpoint.Address)|g" /var/www/ecomap/etc/db.conf
 sed -i -e "s|ro.host=xxxxx|rw.host=$(cat /root/app_data/RDSInstance_Endpoint.Address)|g" /var/www/ecomap/etc/db.conf
 
