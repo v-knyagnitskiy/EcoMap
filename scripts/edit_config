@@ -3,8 +3,8 @@
 sed -i -e "s|rw.host=xxxxx|rw.host=$(cat /root/app_data/RDSInstance_Endpoint.Address)|g" /var/www/ecomap/etc/db.conf
 sed -i -e "s|ro.host=xxxxx|rw.host=$(cat /root/app_data/RDSInstance_Endpoint.Address)|g" /var/www/ecomap/etc/db.conf
 
-sed -i -e "s|<VirtualHost xxxxx:80>|<VirtualHost $(cat /root/app_data/RDSInstance_Endpoint.Address):80>|g" /var/www/ecomap/etc/_ecomap.apache.conf
-sed -i -e "s|ServerName xxxxx|ServerName $(cat /root/app_data/RDSInstance_Endpoint.Address)|g" /var/www/ecomap/etc/_ecomap.apache.conf
-sed -i -e "s|ServerAlias xxxxx|ServerAlias www.$(cat /root/app_data/RDSInstance_Endpoint.Address)|g" /var/www/ecomap/etc/_ecomap.apache.conf
+sed -i -e "s|<VirtualHost xxxxx:80>|<VirtualHost $(cat /root/app_data/EC2InstanceElasticIp):80>|g" /var/www/ecomap/etc/_ecomap.apache.conf
+sed -i -e "s|ServerName xxxxx|ServerName $(cat /root/app_data/EC2InstanceElasticIp)|g" /var/www/ecomap/etc/_ecomap.apache.conf
+sed -i -e "s|ServerAlias xxxxx|ServerAlias www.$(cat /root/app_data/EC2InstanceElasticIp)|g" /var/www/ecomap/etc/_ecomap.apache.conf
 
 ln -s /var/www/ecomap/etc/_ecomap.apache.conf /etc/apache2/sites-available/ecomap.conf
