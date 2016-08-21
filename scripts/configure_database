@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /var/www/ecomap/db/ecomap/
+cd /opt/codedeploy-agent/deployment-root/$DEPLOYMENT_GROUP_ID/$DEPLOYMENT_ID/deployment-archive/ecomap/db/ecomap/
 
 mysql \
 --user=root \
@@ -18,5 +18,3 @@ mysql \
 --execute="USE ecomap; SOURCE CREATE_DB.sql;" \
 --execute="USE ecomap; SOURCE INSERT_DATA.sql;" \
 --execute="FLUSH PRIVILEGES;"
-
-rm -d -r -f /var/www/ecomap/db
