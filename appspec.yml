@@ -3,7 +3,7 @@ os: linux
 files:
   - source: /ecomap
     destination: /var/www/
-  - source: .\requirements.txt
+  - source: /requirements.txt
     destination: /tmp/
 permissions:
   - object: /var/www/
