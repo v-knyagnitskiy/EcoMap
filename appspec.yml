@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /ecomap
-    destination: /var/www
+    destination: /var/www/ecomap
 permissions:
   - object: /var/www/ecomap
     owner: www-data
