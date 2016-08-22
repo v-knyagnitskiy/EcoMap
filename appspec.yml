@@ -4,7 +4,7 @@ files:
   - source: /ecomap
     destination: /var/www/ecomap
 permissions:
-  - object: /var/www/ecomap
+  - object: /var/www
     owner: www-data
     group: www-data
     mode: 770
