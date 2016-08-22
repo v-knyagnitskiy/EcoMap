@@ -1,4 +1,3 @@
 #!/bin/bash
 
 a2ensite ecomap
-service apache2 start
