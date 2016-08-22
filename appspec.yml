@@ -1,5 +1,13 @@
-version: 0.0
+version: 1.0
 os: linux
+files:
+  - source: /ecomap
+    destination: /var/www
+permissions:
+  - object: /var/www/ecomap
+    owner: www-data
+    group: www-data
+    mode: 770
 hooks:
   ApplicationStop:
     - location: scripts/01-application_stop.sh
@@ -13,5 +21,10 @@ hooks:
       runas: root
   AfterInstall:
     - location: scripts/01-after_install.sh
+      timeout: 100
+      runas: root
+  AfterInstall:
+    - location: scripts/01-application_start.sh
+    - location: scripts/02-application_start.sh
       timeout: 100
       runas: root
