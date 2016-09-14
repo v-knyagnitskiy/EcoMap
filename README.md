@@ -3,7 +3,7 @@
 
 ## About this project
 
-This repository is source code of the small web project, which is named 'EcoMap'. This website allows you to publish information about ecological issues around Ukraine to dynamic map. Officials of the Ministry of Environment use this website to collect info about problems and contact with citizens, who publish info to this website.  
+This repository is source code of the small web project, which is named 'EcoMap'. This website allows you to publish information about ecological issues around Ukraine to dynamic map. Officials of the Ministry of Environment use this website to collect info about probldact with citizens, who publish info to this website.  
 Website's url - [ecomap.org](http://ecomap.org)
 
 Ecomap Rest Api docimentation [lhalam.github.io/EcoMap/](http://lhalam.github.io/EcoMap)
